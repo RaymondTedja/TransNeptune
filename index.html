@@ -3,7 +3,8 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>pagePiling.js plugin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>Trans-Neptunian Spaceway</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
 	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
@@ -13,10 +14,16 @@
 	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/materialize.css" rel="stylesheet" type="text/css" media="all">
 
 	<script type="text/javascript" src="jquery_3.4.1.js"></script>
 
 	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 
@@ -25,7 +32,7 @@
 			*/
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
-			    sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+			    sectionsColor: ['#00000', '#0000', '#000000', '#39C'],
 			    navigation: {
 			    	'position': 'right',
 			   	},
@@ -61,6 +68,10 @@
     <style>
     /* Section 1
 	 * --------------------------------------- */
+	#section1 {
+		background-color: black !important;
+	}
+
 	#section1 h1{
 		color: #444;
 	}
@@ -69,8 +80,8 @@
 		color: rgba(0,0,0,0.3);
 	}
 	#section1 img{
-		margin: 20px 0;
-		opacity: 0.7;
+		margin: 0;
+		opacity: 1;
 	}
 
 	/* Section 2
@@ -107,6 +118,10 @@
 		color: #757575;
 	}
 
+	#section3 {
+		background-color: black !important;
+	}
+
 	#colors2,
 	#colors3{
 		position: absolute;
@@ -136,7 +151,7 @@
 	/* Overwriting fullPage.js tooltip color
 	* --------------------------------------- */
 	#pp-nav.custom .pp-tooltip{
-		color: #AAA;
+		color: #ffffff;
 	}
 	#markup{
 		display: block;
@@ -145,21 +160,56 @@
 		text-align: left;
 	}
 
+	#pp-nav li a span {
+		border-color: #ffffff !important;
+	}
+
+	#pp-nav li .active span, .pp-slidesNav .active span {
+		background: #ffffff;
+	}
+
+
+
 </style>
 
 </head>
 <body>
+<ul id="dropdown1" class="dropdown-content">
+	<li><a href="#!">one</a></li>
+	<li><a href="#!">two</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">three</a></li>
+</ul>
+<nav style="background-color: black; z-index: 5">
+	<div class="nav-wrapper" style="z-index:5">
+		<a href="#!" class="brand-logo">Logo</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="sass.html">Sass</a></li>
+			<li><a href="badges.html">Components</a></li>
+			<!-- Dropdown Trigger -->
+			<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+		</ul>
+	</div>
+</nav>
 
-
-	<div id="pagepiling">
+	<div id="pagepiling" style="background-color: black">
 	    <div class="section" id="section1">
-	    	<h1>pagePiling.js</h1>
-			<p>Create an original scrolling site</p>
-			<img src="examples/imgs/pagePiling-plugin.gif" alt="pagePiling" />
-			<br />
-
-	    </div>
+			<img src="space_footage.gif" style="width:100%; height:100%;">
+		</div>
 		<div class="section" id="section2">
+			<div class="intro" style="background: url(kuiper-belt.png);
+				  height: 80%;
+				  background-position: right;
+				  background-repeat: no-repeat;
+				  background-size: cover;">
+
+				<h1>Join us on an Adventure into the Great unknown</h1>
+				<p>The Kuiper Belt is a large region in the cold, outer reaches of our solar system beyond the orbit of Neptune. We offer tours on the planets of this region: Haumea, Make Make, Pluto and Eris.
+					Join us on an incredible and unforgettable experience to journey beyond mankind ourselves.
+				</p>
+			</div>
+		</div>
+		<div class="section" id="section3">
 			<div class="untitled">
 				<div class="untitled__slides">
 					<div class="untitled__slide">
@@ -173,45 +223,75 @@
 						<div class="untitled__slideBg"></div>
 						<div class="untitled__slideContent">
 							<span>Haumea</span>
-							<a class="button" href="https://unsplash.com/@madbyte" target="/black">Unsplash Profile</a>
+							<a class="button" href="https://unsplash.com/@madbyte" target="/black">Witness a 4 hour day</a>
 						</div>
 					</div>
 					<div class="untitled__slide">
 						<div class="untitled__slideBg"></div>
 						<div class="untitled__slideContent">
 							<span>Eris</span>
-							<a class="button" href="https://unsplash.com/@maicoamorim" target="/black">Unsplash Profile</a>
+							<a class="button" href="https://unsplash.com/@maicoamorim" target="/black">Visit the largest dwarf planet</a>
 						</div>
 					</div>
 					<div class="untitled__slide">
 						<div class="untitled__slideBg"></div>
 						<div class="untitled__slideContent">
 							<span>Makemake</span>
-							<a class="button" href="https://unsplash.com/@mariocalvo" target="/black">Unsplash Profile</a>
+							<a class="button" href="https://unsplash.com/@mariocalvo" target="/black">Experience a whole new world</a>
 						</div>
 					</div>
 				</div>
-				<div class="untitled__shutters"></div>
 			</div>
 		</div>
 
+	    <div class="section contact-page" id="section4">
+	    	<div class="intro">
+				<form id="contactform" method="POST" class="contact-container container">
+					<div class="row">
+						<div class="col s12">
+							<div class="row">
+								<section class="center">
+									<h1>CONTACT US</h1>
+								</section>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Full name" type="text" id="fullname" name="fullname" class="validate">
 
-	    <div class="section" id="section3">
-	    	<div class="intro">
-	    		<h1>Configurable</h1>
-	    		<p>Plenty of options, methods and callbacks to use.</p>
-	    		<div id="colors2"></div>
-	    		<div id="colors3"></div>
-	    	</div>
-	    </div>
-	    <div class="section" id="section4">
-	    	<div class="intro">
-	    		<h1>Compatible</h1>
-	    		<p>Designed to work on tablet and mobile devices.</p>
-	    		<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Email Address" type="text" id="email" name="email_address" class="validate">
+
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="input-field col s12">
+									<input placeholder="Phone" type="text" id="phone" name="phone" class="validate">
+
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="input-field col s12">
+									<textarea placeholder="Message" id="message" name="message" class="materialize-textarea" data-length="120"></textarea>
+
+								</div>
+							</div>
+
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+
+				</form>
 	    	</div>
 	    </div>
 	</div>
-
+	<script>
+        document.getElementById('vid').play();
+	</script>
 </body>
 </html>

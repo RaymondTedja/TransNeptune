@@ -146,13 +146,13 @@ html, body {
     animation-delay: 0s;
 }
 .untitled__slide:nth-child(1) .untitled__slideBg {
-    background-image: url("../pluto.jpg");
+    background-image: url(../pluto.jpg);
 }
 .untitled__slide:nth-child(2) {
     animation-delay: 5s;
 }
 .untitled__slide:nth-child(2) .untitled__slideBg {
-    background-image: url(../haumea.jpg);
+    background-image: url(../haumea.png);
 }
 .untitled__slide:nth-child(3) {
     animation-delay: 10s;
@@ -164,7 +164,8 @@ html, body {
     animation-delay: 15s;
 }
 .untitled__slide:nth-child(4) .untitled__slideBg {
-    background-image: url(../makemakee.jpg);
+    background-image: url(../makemake2.png);
+
 }
 .untitled__slideBg {
     position: relative;
@@ -248,3 +249,75 @@ html, body {
     transform: translate3d(0px, 0px, 0);
     box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.5);
 }
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.contact-container .input-field input {
+    color: white;
+    border-bottom-color:white !important;
+}
+
+.contact-container .input-field textarea {
+    color: white;
+    border-bottom-color:white !important;
+}
+
+.contact-container input[type=text], select, textarea {
+    width: 100% !important;
+    padding: 12px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    margin-top: 6px !important;
+    margin-bottom: 16px !important;
+    resize: vertical !important;
+}
+
+.contact-container input[type=submit] {
+    background-color: #4CAF50;
+    color: white !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+}
+
+.contact-container input[type=submit]:hover {
+    background-color: #45a049 !important;
+}
+
+.contact-container {
+    border-radius: 5px !important;
+    padding: 20px !important;
+}
+
+.contact-page {
+    background: url(../star_background.jpg) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact-page .row {
+    margin-bottom: 0px !important;
+}
+
+.contact-page .pp-tableCell {
+    vertical-align: unset !important;
+
+
+nav {
+    background-color: black;
+}
+
