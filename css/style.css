@@ -146,25 +146,37 @@ html, body {
     animation-delay: 0s;
 }
 .untitled__slide:nth-child(1) .untitled__slideBg {
-    background-image: url(../pluto.jpg);
+    background-size: contain;
+    background-image: url(../pluto_transparent.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .untitled__slide:nth-child(2) {
     animation-delay: 5s;
 }
 .untitled__slide:nth-child(2) .untitled__slideBg {
     background-image: url(../haumea.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .untitled__slide:nth-child(3) {
     animation-delay: 10s;
 }
 .untitled__slide:nth-child(3) .untitled__slideBg {
-    background-image: url(../eris.jpg);
+    background-image: url(../eris_transparent.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .untitled__slide:nth-child(4) {
     animation-delay: 15s;
 }
 .untitled__slide:nth-child(4) .untitled__slideBg {
     background-image: url(../makemake2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 .untitled__slideBg {
@@ -302,7 +314,7 @@ input[type=text], select, textarea {
 }
 
 .contact-page {
-    background: url(../star_background.jpg) no-repeat center center fixed !important;
+    background: url(../star_background.jpg) no-repeat center fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -313,8 +325,9 @@ input[type=text], select, textarea {
     margin-bottom: 0px !important;
 }
 
-.contact-page .pp-tableCell {
+.pp-tableCell {
     vertical-align: unset !important;
+}
 
 
 nav {
