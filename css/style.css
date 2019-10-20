@@ -364,8 +364,25 @@ nav {
     background-size: cover;
 }
 
+.planet-details h1 {
+    color:white;
+}
+
+.planet-details p {
+    color:white;
+}
+
 .pluto-planet {
     background-image: url(../pluto_details.png);
+}
+
+.planet-details span {
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 
 
