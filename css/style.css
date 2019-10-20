@@ -362,6 +362,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position:relative;
 }
 
 .planet-details h1 {
@@ -376,13 +377,14 @@ nav {
     background-image: url(../pluto_details.png);
 }
 
+
 .planet-details span {
     position: absolute;
-    top: 60%;
-    right: 30%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    padding-left: 50%;
+    padding-right: 15%;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -395,7 +397,19 @@ nav {
     background-image: url(../makemake_details.png);
 }
 
+.makemake-planet span {
+    position: absolute;
+    top: 10%;
+    padding-left: 10%;
+    padding-right: 50%;
+    color: white;
+    text-align: left;
+}
 
 .eris-planet {
     background-image: url(../eris_details.png);
+}
+
+.eris-planet span {
+    top: 30% !important;
 }
