@@ -2,300 +2,301 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-	<title>Trans-Neptunian Spaceway</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Trans-Neptunian Spaceway</title>
 
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/materialize.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/materialize.css" rel="stylesheet" type="text/css" media="all">
 
-	<script type="text/javascript" src="jquery_3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery_3.4.1.js"></script>
 
-	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
-	<script type="text/javascript" src="js/materialize.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script type="text/javascript">
-		$(document).ready(function() {
+    <script type="text/javascript">
+        $(document).ready(function() {
 
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-			    sectionsColor: ['#00000', '#0000', '#000000', '#39C'],
-			    navigation: {
-			    	'position': 'right',
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-			    }
-			});
+            /*
+            * Plugin intialization
+            */
+            $('#pagepiling').pagepiling({
+                menu: '#menu',
+                sectionsColor: ['#00000', '#0000', '#000000', '#39C'],
+                navigation: {
+                    'position': 'right',
+                },
+                afterRender: function(){
+                    $('#pp-nav').addClass('custom');
+                },
+                afterLoad: function(anchorLink, index){
+                    if(index>1){
+                        $('#pp-nav').removeClass('custom');
+                    }else{
+                        $('#pp-nav').addClass('custom');
+                    }
+                }
+            });
 
 
-			/*
-		    * Internal use of the demo website
-		    */
-		    $('#showExamples').click(function(e){
-				e.stopPropagation();
-				e.preventDefault();
-				$('#examplesList').toggle();
-			});
+            /*
+            * Internal use of the demo website
+            */
+            $('#showExamples').click(function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                $('#examplesList').toggle();
+            });
 
-			$('html').click(function(){
-				$('#examplesList').hide();
-			});
-	    });
+            $('html').click(function(){
+                $('#examplesList').hide();
+            });
+        });
     </script>
 
 
     <style>
-    /* Section 1
-	 * --------------------------------------- */
-	#section1 {
-		background-color: black !important;
-	}
+        /* Section 1
+         * --------------------------------------- */
+        #section1 {
+            background-color: black !important;
+        }
 
-	#section1 h1{
-		color: #444;
-	}
-	#section1 p{
-		color: #333;
-		color: rgba(0,0,0,0.3);
-	}
-	#section1 img{
-		margin: 0;
-		opacity: 1;
-	}
+        #section1 h1{
+            color: #444;
+        }
+        #section1 p{
+            color: #333;
+            color: rgba(0,0,0,0.3);
+        }
+        #section1 img{
+            margin: 0;
+            opacity: 1;
+        }
 
-	/* Section 2
-	 * --------------------------------------- */
-	#section2 h1,
-	#section2 p{
-		z-index: 3;
-	}
-	#section2 p{
-		opacity: 1;
-	}
+        /* Section 2
+         * --------------------------------------- */
+        #section2 h1,
+        #section2 p{
+            z-index: 3;
+        }
+        #section2 p{
+            opacity: 1;
+        }
 
-	#section2 #colors{
-		right: 60px;
-		bottom: 0;
-		position: absolute;
-		height: 413px;
-		width: 258px;
-		background-image: url(examples/imgs/colors.gif);
-		background-repeat: no-repeat;
-	}
+        #section2 #colors{
+            right: 60px;
+            bottom: 0;
+            position: absolute;
+            height: 413px;
+            width: 258px;
+            background-image: url(examples/imgs/colors.gif);
+            background-repeat: no-repeat;
+        }
 
-	#section2 {
-		background-color: black !important;
-	}
+        #section2 {
+            background-color: black !important;
+        }
 
-	/* Section 3
-	 * --------------------------------------- */
-	#section3 #colors{
-		left: 60px;
-		bottom: 0;
-	}
-	#section3 p{
-		color: white;
-	}
+        /* Section 3
+         * --------------------------------------- */
+        #section3 #colors{
+            left: 60px;
+            bottom: 0;
+        }
+        #section3 p{
+            color: white;
+        }
 
-	#section3 {
-		background-color: black !important;
-	}
+        #section3 {
+            background-color: black !important;
+        }
 
-	#colors2,
-	#colors3{
-		position: absolute;
-		height: 163px;
-		width: 362px;
-		z-index: 1;
-		background-repeat: no-repeat;
-		left: 0;
-		margin: 0 auto;
-		right: 0;
-	}
-	#colors2{
-		background-image: url(examples/imgs/colors2.gif);
-		top:0;
-	}
-	#colors3{
-		background-image: url(examples/imgs/colors3.gif);
-		bottom:0;
-	}
+        #colors2,
+        #colors3{
+            position: absolute;
+            height: 163px;
+            width: 362px;
+            z-index: 1;
+            background-repeat: no-repeat;
+            left: 0;
+            margin: 0 auto;
+            right: 0;
+        }
+        #colors2{
+            background-image: url(examples/imgs/colors2.gif);
+            top:0;
+        }
+        #colors3{
+            background-image: url(examples/imgs/colors3.gif);
+            bottom:0;
+        }
 
-	/* Section 4
-	 * --------------------------------------- */
-	#section4 p{
-		opacity: 0.6;
-	}
+        /* Section 4
+         * --------------------------------------- */
+        #section4 p{
+            opacity: 0.6;
+        }
 
-	/* Overwriting fullPage.js tooltip color
-	* --------------------------------------- */
-	#pp-nav.custom .pp-tooltip{
-		color: #ffffff;
-	}
-	#markup{
-		display: block;
-		width: 450px;
-		margin: 20px auto;
-		text-align: left;
-	}
+        /* Overwriting fullPage.js tooltip color
+        * --------------------------------------- */
+        #pp-nav.custom .pp-tooltip{
+            color: #ffffff;
+        }
+        #markup{
+            display: block;
+            width: 450px;
+            margin: 20px auto;
+            text-align: left;
+        }
 
-	#pp-nav li a span {
-		border-color: #ffffff !important;
-	}
+        #pp-nav li a span {
+            border-color: #ffffff !important;
+        }
 
-	#pp-nav li .active span, .pp-slidesNav .active span {
-		background: #ffffff;
-	}
+        #pp-nav li .active span, .pp-slidesNav .active span {
+            background: #ffffff;
+        }
 
 
 
-</style>
+    </style>
+    <script src="js/jquery.pagepiling.js"></script>
 
 </head>
 <body style="background-color:black;">
 
-	<div id="pagepiling" style="background-color: black">
-		<div class="navbar-fixed" style="background-color: black; z-index: 99; height: 100px">
-			<nav style="background-color: black; z-index: 99; height: 100px">
-				<div class="nav-wrapper" style="z-index:99">
-					<a href="index.html" style="display: table" class="brand-logo">
-						<img src="TNS_logo.png" style="height: 60px; margin:20px 0px 0px 20px;">
-						<span style="color: #2e4ca1;-webkit-text-stroke: 0.3px white;padding-left: 30px; display: table-cell; vertical-align: middle;">TRANS-NEPTUNIAN SPACEWAY</span>
-					</a>
-					<ul class="right hide-on-med-and-down" style="display: table; padding-right: 30px;">
-						<li><a style="color: #2e4ca1;-webkit-text-stroke: 0.3px white; height:100px; vertical-align: middle; display:table-cell" href="index.html">HOME</a></li>
-						<li><a  style="color: #2e4ca1;-webkit-text-stroke: 0.3px white; height:100px; vertical-align: middle; display:table-cell" href="planets.html">PLANETS</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+<div id="pagepiling" style="background-color: black">
+    <div class="navbar-fixed" style="background-color: black; z-index: 99; height: 100px">
+        <nav style="background-color: black; z-index: 99; height: 100px">
+            <div class="nav-wrapper" style="z-index:99">
+                <a href="index.html" style="display: table" class="brand-logo">
+                    <img src="image/TNS_logo.png" style="height: 60px; margin:20px 0px 0px 20px;">
+                    <span style="color: #2e4ca1;-webkit-text-stroke: 0.3px white;padding-left: 30px; display: table-cell; vertical-align: middle;">TRANS-NEPTUNIAN SPACEWAY</span>
+                </a>
+                <ul class="right hide-on-med-and-down" style="display: table; padding-right: 30px;">
+                    <li><a style="color: #2e4ca1;-webkit-text-stroke: 0.3px white; height:100px; vertical-align: middle; display:table-cell" href="index.html">HOME</a></li>
+                    <li><a  style="color: #2e4ca1;-webkit-text-stroke: 0.3px white; height:100px; vertical-align: middle; display:table-cell" href="planets.html">PLANETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-	    <div class="section" id="section1" style="width: 100%; height: 100%; padding-top: 0rem;">
-			<div class="image-text-block-container">
-				<img src="space_footage.gif" style="width:90%; height:90%;object-fit: cover;">
-				<div class="text-block">
-					Opening up new horizons  <br><br>
-					Space travel  <br><br>
-					Pushing boundaries</div>
-			</div>
+    <div class="section" id="section1" style="width: 100%; height: 100%; padding-top: 0rem;">
+        <div class="image-text-block-container">
+            <img src="image/space_footage.gif" style="width:90%; height:90%;object-fit: cover;">
+            <div class="text-block">
+                Opening up new horizons  <br><br>
+                Space travel  <br><br>
+                Pushing boundaries</div>
+        </div>
 
-		</div>
+    </div>
 
-		<div class="section" id="section2">
-			<div class="untitled">
-				<div class="untitled__slides">
-					<div class="untitled__slide">
-						<div class="untitled__slideBg"></div>
-						<div class="untitled__slideContent">
-							<span>Haumea</span>
-							<a class="button" href="planets.html#haumea" target="/black">Witness a 4 hour day</a>
-						</div>
-					</div>
-					<div class="untitled__slide">
-						<div class="untitled__slideBg"></div>
-						<div class="untitled__slideContent">
-							<span>Pluto</span>
-							<a class="button" href="planets.html#pluto" target="/black">Get to the heart of Pluto</a>
-						</div>
-					</div>
-					<div class="untitled__slide">
-						<div class="untitled__slideBg"></div>
-						<div class="untitled__slideContent">
-							<span>Eris</span>
-							<a class="button" href="planets.html#eris" target="/black">Visit the largest dwarf planet</a>
-						</div>
-					</div>
-					<div class="untitled__slide">
-						<div class="untitled__slideBg"></div>
-						<div class="untitled__slideContent">
-							<span>MakeMake</span>
-							<a class="button" href="planets.html#makemake" target="/black">Experience a whole new world</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="section" id="section2">
+        <div class="untitled">
+            <div class="untitled__slides">
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <span>Haumea</span>
+                        <a class="button" href="planets.html#haumea" target="/black">Witness a 4 hour day</a>
+                    </div>
+                </div>
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <span>Pluto</span>
+                        <a class="button" href="planets.html#pluto" target="/black">Get to the heart of Pluto</a>
+                    </div>
+                </div>
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <span>Eris</span>
+                        <a class="button" href="planets.html#eris" target="/black">Visit the largest dwarf planet</a>
+                    </div>
+                </div>
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <span>MakeMake</span>
+                        <a class="button" href="planets.html#makemake" target="/black">Experience a whole new world</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="section" id="section3">
-			<div class="intro" style="background: url(kuiper-belt.png);
+    <div class="section" id="section3">
+        <div class="intro" style="background: url(image/kuiper-belt.png);
 				  height: 80%;
 				  background-position: right;
 				  background-repeat: no-repeat;
 				  background-size: cover;">
 
-				<h1>JOIN US INTO THE GREAT UNKNOWN</h1>
-				<p>The Kuiper Belt is a large region in the cold, outer reaches of our solar system beyond the orbit of Neptune. We offer tours on the planets of this region: Haumea, Make Make, Pluto and Eris.
-					Join us on an incredible and unforgettable experience to journey beyond mankind ourselves. Stargaze into the cosmos.
-				</p>
-			</div>
-		</div>
+            <h1>JOIN US INTO THE GREAT UNKNOWN</h1>
+            <p>The Kuiper Belt is a large region in the cold, outer reaches of our solar system beyond the orbit of Neptune. We offer tours on the planets of this region: Haumea, Make Make, Pluto and Eris.
+                Join us on an incredible and unforgettable experience to journey beyond mankind ourselves. Stargaze into the cosmos.
+            </p>
+        </div>
+    </div>
 
 
-	    <div class="section contact-page" id="section4">
-	    	<div class="intro">
-				<form id="contactform" method="POST" class="contact-container container">
-					<div class="row">
-						<div class="col s12">
-							<div class="row">
-								<section class="center">
-									<h1>CONTACT US</h1>
-								</section>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input placeholder="Full name" type="text" id="fullname" name="fullname" class="validate">
+    <div class="section contact-page" id="section4">
+        <div class="intro">
+            <form id="contactform" method="POST" class="contact-container container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <section class="center">
+                                <h1>CONTACT US</h1>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Full name" type="text" id="fullname" name="fullname" class="validate">
 
-								</div>
-							</div>
+                            </div>
+                        </div>
 
-							<div class="row">
-								<div class="input-field col s12">
-									<input placeholder="Email Address" type="text" id="email" name="email_address" class="validate">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Email Address" type="text" id="email" name="email_address" class="validate">
 
-								</div>
-							</div>
+                            </div>
+                        </div>
 
-							<div class="row">
-								<div class="input-field col s12">
-									<input placeholder="Phone" type="text" id="phone" name="phone" class="validate">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Phone" type="text" id="phone" name="phone" class="validate">
 
-								</div>
-							</div>
+                            </div>
+                        </div>
 
-							<div class="row">
-								<div class="input-field col s12">
-									<textarea placeholder="Message" id="message" name="message" class="materialize-textarea" data-length="120"></textarea>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea placeholder="Message" id="message" name="message" class="materialize-textarea" data-length="120"></textarea>
 
-								</div>
-							</div>
+                            </div>
+                        </div>
 
-							<input type="submit" value="Submit">
-						</div>
-					</div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
 
-				</form>
-	    	</div>
-	    </div>
-	</div>
-	<script>
-        document.getElementById('vid').play();
-	</script>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('vid').play();
+</script>
 </body>
 </html>

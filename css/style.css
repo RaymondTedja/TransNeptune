@@ -148,7 +148,7 @@ html, body {
 .untitled__slide:nth-child(1) .untitled__slideBg {
     background-size: contain;
 
-    background-image: url(../haumea.png);
+    background-image: url(../image/haumea.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -156,7 +156,7 @@ html, body {
     animation-delay: 5s;
 }
 .untitled__slide:nth-child(2) .untitled__slideBg {
-    background-image: url(../pluto_transparent.png);
+    background-image: url(../image/pluto_transparent.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,7 +165,7 @@ html, body {
     animation-delay: 10s;
 }
 .untitled__slide:nth-child(3) .untitled__slideBg {
-    background-image: url(../eris_transparent.png);
+    background-image: url(../image/eris_transparent.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -174,7 +174,7 @@ html, body {
     animation-delay: 15s;
 }
 .untitled__slide:nth-child(4) .untitled__slideBg {
-    background-image: url(../makemake2.png);
+    background-image: url(../image/makemake2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -315,7 +315,7 @@ input[type=text], select, textarea {
 }
 
 .contact-page {
-    background: url(../star_background.jpg) no-repeat center fixed !important;
+    background: url(../image/star_background.jpg) no-repeat center fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -374,7 +374,7 @@ nav {
 }
 
 .pluto-planet {
-    background-image: url(../pluto_details.png);
+    background-image: url(../image/pluto_details.png);
 }
 
 
@@ -389,7 +389,7 @@ nav {
 
 
 .haumea-planet {
-    background-image: url(../haumea_details.png);
+    background-image: url(../image/haumea_details.png);
 }
 
 .haumea-planet span {
@@ -398,7 +398,7 @@ nav {
 
 
 .makemake-planet {
-    background-image: url(../makemake_details.png);
+    background-image: url(../image/makemake_details.png);
 }
 
 .makemake-planet span {
@@ -411,7 +411,7 @@ nav {
 }
 
 .eris-planet {
-    background-image: url(../eris_details.png);
+    background-image: url(../image/eris_details.png);
 }
 
 .eris-planet span {
