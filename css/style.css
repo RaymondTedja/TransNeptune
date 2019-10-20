@@ -392,6 +392,10 @@ nav {
     background-image: url(../haumea_details.png);
 }
 
+.haumea-planet span {
+    padding-right: 25% !important;
+}
+
 
 .makemake-planet {
     background-image: url(../makemake_details.png);
