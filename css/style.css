@@ -355,3 +355,30 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.planet-details {
+    background-color: black;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pluto-planet {
+    background-image: url(../pluto_details.png);
+}
+
+
+.haumea-planet {
+    background-image: url(../haumea_details.png);
+}
+
+
+.makemake-planet {
+    background-image: url(../makemake_details.png);
+}
+
+
+.eris-planet {
+    background-image: url(../eris_details.png);
+}
